@@ -72,22 +72,22 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-        # Draw the UI elements in a horizontal line
-        y_position = 50  # Keep the same Y position for all elements
+    # Draw the UI elements in a horizontal line
+    y_position = 50  # Keep the same Y position for all elements
 
-        # Starting X positions for the elements
-        x_health_bar = 50
-        x_coin_counter = x_health_bar + 300  # Adjust spacing after health bar
-        x_ectoplasm = x_coin_counter + 300  # Adjust spacing after coin counter
+    # Starting X positions for the elements
+    x_health_bar = 50
+    x_coin_counter = x_health_bar + 300  # Adjust spacing after health bar
+    x_ectoplasm = x_coin_counter + 300  # Adjust spacing after coin counter
 
-        # Draw the health bar
-        game_ui.draw_health_bar(screen, x_health_bar, y_position)
+    # Draw the health bar
+    game_ui.draw_health_bar(screen, x_health_bar, y_position)
 
-        # Draw the coin counter
-        game_ui.draw_coin_counter(screen, x_coin_counter, y_position)
+    # Draw the coin counter
+    game_ui.draw_coin_counter(screen, x_coin_counter, y_position)
 
-        # Draw the ectoplasm image
-        game_ui.draw_ectoplasm(screen, x_ectoplasm, y_position)
+    # Draw the ectoplasm image
+    game_ui.draw_ectoplasm(screen, x_ectoplasm, y_position)
 
     # Update player stats (simulate health dropping and coins increasing)
     player.take_damage(0.1)
